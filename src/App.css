@@ -1,0 +1,186 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input-group {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 900px;
+    margin-bottom: 1rem;
+}
+
+.input-group input,
+.input-group select {
+    flex: 1;
+    margin: 0.5rem;
+}
+
+.input-group .currency-full-name {
+    margin-left: 0.5rem;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 900px;
+    align-items: center;
+}
+
+.button-group button {
+    margin-left: auto;
+}
+
+.result-label {
+    display: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding-left: 0.5rem;
+}
+
+.result-label.show {
+    display: inline;
+}
+
+.result-label .result-number {
+    color: #007bff;
+}
+
+.result-label .result-currency {
+    color: #00008b; /* Dark blue color */
+}
+
+.currency-input input {
+    width: 90%;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.input-error {
+    border: 2px solid red;
+}
+
+.currency-dropdown {
+    position: absolute;
+    top: 90%;
+    left: 0;
+    right: 0;
+    max-height: 200px;
+    overflow-y: auto;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    z-index: 1000;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    scrollbar-width: thin;
+    scrollbar-color: #007bff #f0f0f0;
+    overflow-x: hidden;
+}
+
+.currency-dropdown::-webkit-scrollbar {
+    width: 8px;
+}
+
+.currency-dropdown::-webkit-scrollbar-track {
+    background: #f0f0f0;
+    border-radius: 10px;
+}
+
+.currency-dropdown::-webkit-scrollbar-thumb {
+    background-color: #007bff;
+    border-radius: 10px;
+    border: 2px solid #f0f0f0;
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+.currency-dropdown li {
+    padding: 0.5rem;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.currency-dropdown li:hover {
+    background-color: #f0f0f0;
+    transform: scale(1.02);
+    transition: transform 0.2s ease-in-out;
+    overflow: hidden;
+}
+
+.currency-full-name {
+    display: inline-block;
+    margin-left: 0.5rem;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.currency-input {
+    position: relative;
+    width: calc(100% - 1rem);
+    max-width: 300px;
+}
+
+.currency-dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    max-height: 200px;
+    overflow-y: auto;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    z-index: 1000;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    scrollbar-width: thin;
+    scrollbar-color: #007bff #f0f0f0;
+    overflow-x: hidden;
+}
+
+.currency-dropdown::-webkit-scrollbar {
+    width: 8px;
+}
+
+.currency-dropdown::-webkit-scrollbar-track {
+    background: #f0f0f0;
+    border-radius: 10px;
+}
+
+.currency-dropdown::-webkit-scrollbar-thumb {
+    background-color: #007bff;
+    border-radius: 10px;
+    border: 2px solid #f0f0f0;
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+.currency-dropdown li {
+    padding: 0.5rem;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.currency-dropdown li:hover {
+    background-color: #f0f0f0;
+    transform: scale(1.02);
+    font-weight: bold;
+    transition: transform 0.2s ease-in-out, font-weight 0.5s ease-in-out;
+    overflow: hidden;
+}
+
+.currency-full-name {
+    display: inline-block;
+    margin-left: 0.5rem;
+    font-size: 0.9rem;
+    color: #666;
+}
